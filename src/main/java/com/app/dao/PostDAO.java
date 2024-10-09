@@ -20,6 +20,7 @@ public class PostDAO {
 	public void insert(PostVO postVO) {
 		sqlSession.insert("post.insert", postVO);
 	}
+
 //	게시글조회
 	public Optional<PostVO> select(Long id) {
 		return Optional.ofNullable(sqlSession.selectOne("post.select", id));

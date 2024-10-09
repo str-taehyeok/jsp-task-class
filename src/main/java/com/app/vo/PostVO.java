@@ -9,13 +9,6 @@ public class PostVO {
 	
 	public PostVO() {;}
 
-	public PostVO(Long id, String postTitle, String postContent) {
-		super();
-		this.id = id;
-		this.postTitle = postTitle;
-		this.postContent = postContent;
-	}
-
 	public Long getId() {
 		return id;
 	}
